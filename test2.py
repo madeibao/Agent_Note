@@ -31,5 +31,6 @@ messages = [
     ),
 ]
 
-ai_msg = llm.invoke(messages)
-print(ai_msg.content)
+if __name__ == '__main__':
+    ai_msg = llm.invoke(messages)
+    print(ai_msg.content)
