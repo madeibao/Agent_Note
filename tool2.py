@@ -3,13 +3,8 @@
 from langchain.tools import tool
 
 @tool
-def recommend_tutorial(
-    language: str,
-    level: str = "入门",
-    count: int = 3,
-) -> str:
+def recommend_tutorial(language: str, level: str = "入门", count: int = 3 ) -> str:
     """根据编程语言和难度推荐菜鸟教程 RUNOOB 的课程。
-
     Args:
         language: 编程语言，如 Python、Java、HTML
         level: 难度级别，可选 "入门"、"进阶"、"高级"。默认 "入门"
